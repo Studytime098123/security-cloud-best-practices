@@ -29,81 +29,87 @@ This guide summarizes how to establish, monitor, and enforce **security controls
 👤 IAM Best Practices
 ---
 
-Enforce least privilege access.
+1.Enforce least privilege access.
 
-Use IAM roles instead of long-term credentials.
+2.Use IAM roles instead of long-term credentials.
 
-Enable MFA for all users.
+3.Enable MFA for all users.
 
-Rotate access keys automatically using AWS Config or CI/CD checks.
+4.Rotate access keys automatically using AWS Config or CI/CD checks.
 
-Detect public access with IAM Access Analyzer.
+5.Detect public access with IAM Access Analyzer.
 
 🧰 2. Continuous Monitoring & Auditing
-🪶 AWS CloudTrail
+---
+1.🪶 AWS CloudTrail
 
-Enable organization-wide trails in all regions.
+2.Enable organization-wide trails in all regions.
 
-Store logs in S3 (SSE-KMS encrypted).
+3.Store logs in S3 (SSE-KMS encrypted).
 
-Stream to CloudWatch Logs for alerting on key events like ConsoleLogin or DeleteTrail.
+4.Stream to CloudWatch Logs for alerting on key events like ConsoleLogin or DeleteTrail.
 
 🧩 AWS Config
+---
 
-Continuously track configuration changes.
+1.Continuously track configuration changes.
 
-Enable Conformance Packs (e.g., CIS AWS Foundations Benchmark).
+2.Enable Conformance Packs (e.g., CIS AWS Foundations Benchmark).
 
-Add custom Lambda rules for advanced compliance checks.
+3.Add custom Lambda rules for advanced compliance checks.
 
 🛠️ AWS Security Hub
+---
 
-Centralize findings from GuardDuty, Inspector, Macie, Config, etc.
+1.Centralize findings from GuardDuty, Inspector, Macie, Config, etc.
 
-Enable compliance standards:
+2.Enable compliance standards:
 
-CIS AWS Foundations Benchmark
+3.CIS AWS Foundations Benchmark
 
-NIST 800-53
+4.NIST 800-53
 
-PCI DSS
+5.PCI DSS
 
-Forward findings to SIEM tools (Splunk, Datadog, ELK, etc).
+6.Forward findings to SIEM tools (Splunk, Datadog, ELK, etc).
 
 ⚔️ 3. Threat Detection & Response
+---
 🚨 Amazon GuardDuty
 
-Detects anomalies in VPC Flow Logs, CloudTrail, and DNS logs.
+1.Detects anomalies in VPC Flow Logs, CloudTrail, and DNS logs.
 
-Alerts on compromised instances, crypto-mining, or exfiltration.
+2.Alerts on compromised instances, crypto-mining, or exfiltration.
 
 🔍 AWS Inspector
 
-Scans EC2, ECR, and Lambda for vulnerabilities.
+1.Scans EC2, ECR, and Lambda for vulnerabilities.
 
-Reassesses automatically after deployments.
+2.Reassesses automatically after deployments.
 
 🔐 Amazon Macie
 
-Scans S3 buckets for PII and sensitive data.
+1.Scans S3 buckets for PII and sensitive data.
 
-Detects and enforces encryption or access controls.
+2.Detects and enforces encryption or access controls.
 
 🧱 4. Network Security Controls
+---
 
-Use private subnets for internal workloads.
+1.Use private subnets for internal workloads.
 
-Apply Security Groups and NACLs with least privilege.
+2.Apply Security Groups and NACLs with least privilege.
 
-Route all outbound traffic through NAT Gateway or firewall appliances.
+3.Route all outbound traffic through NAT Gateway or firewall appliances.
 
-Protect web apps with:
+4.Protect web apps with:
 
-AWS WAF for OWASP Top 10 threats.
+5.AWS WAF for OWASP Top 10 threats.
 
-AWS Shield Advanced for DDoS mitigation.
+6.AWS Shield Advanced for DDoS mitigation.
 
 🗝️ 5. Data Protection & Encryption
+---
 
 Enforce encryption at rest and in transit.
 
