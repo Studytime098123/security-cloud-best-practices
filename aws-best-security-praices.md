@@ -122,6 +122,7 @@ Manage credentials with Secrets Manager or Parameter Store.
 Encrypt all RDS, EBS, and S3 data by default.
 
 🧮 6. Compliance Management in Real-Time
+---
 📜 AWS Audit Manager
 
 Map AWS configurations to compliance frameworks like:
@@ -149,6 +150,7 @@ PCI-DSS
 Automate remediation with Systems Manager Automation Documents (SSM Docs).
 
 🔁 7. Real-Time Enforcement & Auto-Remediation
+---
 
 Example: Enforce S3 Encryption
 
@@ -161,6 +163,7 @@ Lambda Function enables encryption or sends Slack/Teams alert.
 This creates a self-healing compliance posture.
 
 🧠 8. Centralized Security Operations
+---
 
 Use AWS Security Lake or export findings to a SIEM.
 
@@ -171,6 +174,7 @@ Example Flow:
 GuardDuty → Security Hub → EventBridge → Kinesis Firehose → SIEM (e.g., Splunk/ELK)
 
 📊 9. Dashboards & Reporting
+---
 
 Use QuickSight or Grafana to visualize:
 
@@ -183,6 +187,7 @@ Compliance score
 Send daily/weekly reports via SNS or email to security teams.
 
 ⚙️ 10. Automation & CI/CD Integration
+---
 
 Integrate security into CI/CD pipelines:
 
@@ -195,6 +200,7 @@ OPA or Terraform Sentinel for policy enforcement.
 Enforce compliance before infrastructure is deployed.
 
 🧩 Real-Time Security Architecture Summary
+---
 Layer	AWS Service	Purpose
 Governance	Organizations + SCPs	Prevent misconfigurations
 IAM	IAM, Access Analyzer	Enforce least privilege
@@ -216,6 +222,7 @@ Automate remediation with Lambda.
 Continuously monitor compliance via dashboards.
 
 ✅ Outcome
+---
 
 Continuous visibility into security posture.
 
@@ -231,4 +238,3 @@ Purpose: Internal reference for managing AWS security and compliance in real-wor
 
 ---
 
-Would you like me to include a **diagram section** (with a Markdown image placeholder and short description) to visually
